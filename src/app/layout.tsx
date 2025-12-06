@@ -110,12 +110,7 @@ export default async function RootLayout({
     return (
         <html lang="ja">
             <body className={`${notoSansJp.variable} antialiased`}>
-                <script
-                    id="passpal-ld-json"
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-                    nonce={nonce}
-                />
+                <script id="passpal-ld-json" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} nonce={nonce} />
                 <a href="#main-content" className="skip-link">
                     メインコンテンツにスキップ
                 </a>
