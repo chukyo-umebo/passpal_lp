@@ -1,3 +1,4 @@
 {
-    "cSpell.words": ["passpal"]
+    "cSpell.words": ["passpal"],
+    "css.customData": [".vscode/css_custom_data.json"]
 }
