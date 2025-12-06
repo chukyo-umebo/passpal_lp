@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = "https://chukyo-passpal.app/";
+    const baseUrl = "https://chukyo-passpal.app";
 
     return {
         rules: {

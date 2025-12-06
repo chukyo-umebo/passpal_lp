@@ -91,7 +91,7 @@ const structuredData = {
         price: "0",
         priceCurrency: "JPY",
     },
-    downloadUrl: ["https://apps.apple.com/app/passpal/id6754452343", "hhttps://play.google.com/store/apps/details?id=app.chukyopasspal.passpal"],
+    downloadUrl: ["https://apps.apple.com/app/passpal/id6754452343", "https://play.google.com/store/apps/details?id=app.chukyopasspal.passpal"],
     publisher: {
         "@type": "Organization",
         name: "PassPal開発チーム",
