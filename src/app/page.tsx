@@ -167,6 +167,7 @@ export default function HomePage() {
                             width={48}
                             height={48}
                             priority
+                            sizes="48px"
                             className="h-12 w-12 rounded-2xl shadow-lg shadow-[#B19CD9]/50"
                         />
                         <span className="bg-gradient-to-r from-[#B19CD9] to-[#f0ebff] bg-clip-text text-2xl text-transparent">PassPal</span>
@@ -294,6 +295,7 @@ export default function HomePage() {
                                     width={384}
                                     height={832}
                                     priority
+                                    sizes="(max-width: 640px) 100vw, 384px"
                                     className="mx-auto w-full max-w-sm rounded-3xl border-4 border-[#B19CD9]/30 shadow-2xl shadow-[#B19CD9]/50 transition-transform duration-500 hover:scale-105"
                                 />
                             </div>
@@ -392,6 +394,7 @@ export default function HomePage() {
                                         alt={screen.title}
                                         width={320}
                                         height={693}
+                                        sizes="(max-width: 640px) 100vw, 320px"
                                         className={`mx-auto w-full max-w-xs rounded-3xl border-4 ${screen.border} ${screen.shadow} shadow-2xl transition-all duration-500 group-hover:scale-105 group-hover:border-opacity-70`}
                                     />
                                     <div
@@ -458,10 +461,10 @@ export default function HomePage() {
                                     window.open("https://apps.apple.com/app/passpal/id6754452343");
                                 }}
                             >
-                                <Image src="/img/AppStoreBadge.svg" alt="App Store" width={170} height={57} />
+                                <Image src="/img/AppStoreBadge.svg" alt="App Store" width={170} height={57} sizes="170px" />
                             </Button>
                             <Button className="m-0 h-auto bg-transparent p-0 shadow-none hover:bg-transparent grayscale" size="lg" disabled>
-                                <Image src="/img/GooglePlayBadge.png" alt="Google Play" width={200} height={59} />
+                                <Image src="/img/GooglePlayBadge.png" alt="Google Play" width={200} height={59} sizes="200px" />
                             </Button>
                         </div>
                     </motion.div>
@@ -509,6 +512,7 @@ export default function HomePage() {
                                     alt="PassPal"
                                     width={56}
                                     height={56}
+                                    sizes="56px"
                                     className="h-14 w-14 rounded-2xl shadow-lg shadow-[#B19CD9]/50"
                                 />
                                 <span className="bg-gradient-to-r from-[#B19CD9] to-[#f0ebff] bg-clip-text text-2xl text-transparent">PassPal</span>

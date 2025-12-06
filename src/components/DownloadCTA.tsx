@@ -62,7 +62,7 @@ export default function DownloadCTA({ noteColor = "text-passpal-gray-600" }: Dow
 function GooglePlayButton() {
     return (
         <a href="#" className="inline-block hover:opacity-80 transition-opacity">
-            <Image src="/GooglePlayBadge.png" alt="Google Playからダウンロード" width={200} height={60} className="h-15 w-auto" />
+            <Image src="/GooglePlayBadge.png" alt="Google Playからダウンロード" width={200} height={60} sizes="200px" className="h-15 w-auto" />
         </a>
     );
 }
@@ -70,7 +70,7 @@ function GooglePlayButton() {
 function AppStoreButton() {
     return (
         <a href="#" className="inline-block hover:opacity-80 transition-opacity">
-            <Image src="/AppStoreBadge.svg" alt="App Storeからダウンロード" width={200} height={60} className="h-15 w-auto" />
+            <Image src="/AppStoreBadge.svg" alt="App Storeからダウンロード" width={200} height={60} sizes="200px" className="h-15 w-auto" />
         </a>
     );
 }
@@ -78,7 +78,7 @@ function AppStoreButton() {
 function BrowserExtensionButton() {
     return (
         <a href="#" className="inline-block hover:opacity-80 transition-opacity">
-            <Image src="/ChromeWebStooreBadge.png" alt="ブラウザ拡張機能をインストール" width={200} height={60} className="h-15 w-auto" />
+            <Image src="/ChromeWebStooreBadge.png" alt="ブラウザ拡張機能をインストール" width={200} height={60} sizes="200px" className="h-15 w-auto" />
         </a>
     );
 }
