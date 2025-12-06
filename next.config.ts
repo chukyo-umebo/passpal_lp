@@ -32,6 +32,10 @@ const nextConfig: NextConfig = {
                         key: "Strict-Transport-Security",
                         value: "max-age=86400; includeSubDomains",
                     },
+                    {
+                        key: "X-Frame-Options",
+                        value: "SAMEORIGIN",
+                    },
                 ],
             },
         ];
