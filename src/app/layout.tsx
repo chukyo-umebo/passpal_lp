@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 
 const notoSansJp = Noto_Sans_JP({
     subsets: ["latin"],
     weight: ["400", "700"],
-    preload: false,
     variable: "--font-noto-sans-jp",
     display: "swap",
     fallback: ["Hiragino Sans", "Hiragino Kaku Gothic ProN", "sans-serif"],
@@ -108,9 +106,7 @@ export default function RootLayout({
     return (
         <html lang="ja">
             <body className={`${notoSansJp.variable} antialiased`}>
-                <Script id="passpal-ld-json" type="application/ld+json" strategy="beforeInteractive">
-                    {JSON.stringify(structuredData)}
-                </Script>
+                <script id="passpal-ld-json" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
                 <a href="#main-content" className="skip-link">
                     メインコンテンツにスキップ
                 </a>

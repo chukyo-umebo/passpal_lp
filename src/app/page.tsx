@@ -1,7 +1,7 @@
 "use client";
-/* eslint-disable @next/next/no-img-element */
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { BarChart3, Bell, BookOpen, Calendar, Check, ChevronDown, Clock, Download, Shield, Smartphone, Sparkles, Users, Wifi, Zap } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -161,7 +161,7 @@ export default function HomePage() {
             >
                 <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center gap-3">
-                        <img src={SCREENSHOTS.appIcon} alt="PassPal" className="h-12 w-12 rounded-2xl shadow-lg shadow-[#B19CD9]/50" />
+                        <Image src={SCREENSHOTS.appIcon} alt="PassPal" width={48} height={48} className="h-12 w-12 rounded-2xl shadow-lg shadow-[#B19CD9]/50" />
                         <span className="bg-gradient-to-r from-[#B19CD9] to-[#f0ebff] bg-clip-text text-2xl text-transparent">PassPal</span>
                     </div>
                     <div className="hidden items-center gap-8 md:flex">
@@ -281,9 +281,12 @@ export default function HomePage() {
                             className="relative"
                         >
                             <div className="relative z-10">
-                                <img
+                                <Image
                                     src={SCREENSHOTS.welcome}
                                     alt="PassPal 簡単セットアップ"
+                                    width={384}
+                                    height={832}
+                                    priority
                                     className="mx-auto w-full max-w-sm rounded-3xl border-4 border-[#B19CD9]/30 shadow-2xl shadow-[#B19CD9]/50 transition-transform duration-500 hover:scale-105"
                                 />
                             </div>
@@ -377,9 +380,11 @@ export default function HomePage() {
                                 className="group"
                             >
                                 <div className="relative mb-8">
-                                    <img
+                                    <Image
                                         src={screen.src}
                                         alt={screen.title}
+                                        width={320}
+                                        height={693}
                                         className={`mx-auto w-full max-w-xs rounded-3xl border-4 ${screen.border} ${screen.shadow} shadow-2xl transition-all duration-500 group-hover:scale-105 group-hover:border-opacity-70`}
                                     />
                                     <div
@@ -446,10 +451,10 @@ export default function HomePage() {
                                     window.open("https://apps.apple.com/app/passpal/id6754452343");
                                 }}
                             >
-                                <img src="/img/AppStoreBadge.svg" alt="App Store" width={170} />
+                                <Image src="/img/AppStoreBadge.svg" alt="App Store" width={170} height={57} />
                             </Button>
                             <Button className="m-0 h-auto bg-transparent p-0 shadow-none hover:bg-transparent grayscale" size="lg" disabled>
-                                <img src="/img/GooglePlayBadge.png" alt="Google Play" width={200} />
+                                <Image src="/img/GooglePlayBadge.png" alt="Google Play" width={200} height={59} />
                             </Button>
                         </div>
                     </motion.div>
@@ -492,7 +497,13 @@ export default function HomePage() {
                     <div className="mb-12 grid gap-12 md:grid-cols-5">
                         <div>
                             <div className="mb-6 flex items-center gap-3">
-                                <img src={SCREENSHOTS.appIcon} alt="PassPal" className="h-14 w-14 rounded-2xl shadow-lg shadow-[#B19CD9]/50" />
+                                <Image
+                                    src={SCREENSHOTS.appIcon}
+                                    alt="PassPal"
+                                    width={56}
+                                    height={56}
+                                    className="h-14 w-14 rounded-2xl shadow-lg shadow-[#B19CD9]/50"
+                                />
                                 <span className="bg-gradient-to-r from-[#B19CD9] to-[#f0ebff] bg-clip-text text-2xl text-transparent">PassPal</span>
                             </div>
                             <p className="leading-relaxed text-gray-400">
