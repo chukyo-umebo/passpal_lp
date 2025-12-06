@@ -489,7 +489,7 @@ export default function HomePage() {
             </section>
             <footer className="bg-gradient-to-b from-black to-[#0f0f12] px-4 py-16 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-7xl">
-                    <div className="mb-12 grid gap-12 md:grid-cols-4">
+                    <div className="mb-12 grid gap-12 md:grid-cols-5">
                         <div>
                             <div className="mb-6 flex items-center gap-3">
                                 <img src={SCREENSHOTS.appIcon} alt="PassPal" className="h-14 w-14 rounded-2xl shadow-lg shadow-[#B19CD9]/50" />
@@ -532,6 +532,27 @@ export default function HomePage() {
                                 <li>
                                     <a href="https://apps.apple.com/app/passpal/id6754452343" className="transition-colors hover:text-[#B19CD9]">
                                         App Store
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 className="mb-6 text-lg text-white">サポート</h4>
+                            <ul className="space-y-3 text-gray-400">
+                                <li>
+                                    <a
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLSeu7t-Z3PgwvG0aKY4XCSz160FyjE03SNUyu7Qhq11F_2Z_Dg/viewform?usp=dialog"
+                                        className="transition-colors hover:text-[#B19CD9]"
+                                    >
+                                        フィードバック
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLScnnbnSoIpNizG1gU_pDVuDq9GifE1EeevYd3-n4Uy1fGAQiw/viewform?usp=publish-editor"
+                                        className="transition-colors hover:text-[#B19CD9]"
+                                    >
+                                        問い合わせフォーム
                                     </a>
                                 </li>
                             </ul>
