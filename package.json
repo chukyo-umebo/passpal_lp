@@ -85,7 +85,13 @@
         "typescript": "^5",
         "typescript-plugin-css-modules": "^5.2.0"
     },
-    "imports": {
-        "#globals.css": "./src/app/globals.css"
-    }
+    "browserslist": [
+        "chrome >= 90",
+        "firefox >= 90",
+        "edge >= 90",
+        "safari >= 15",
+        "ios >= 15",
+        "not dead",
+        "not op_mini all"
+    ]
 }
