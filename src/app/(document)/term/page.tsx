@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "利用規約",
+    description: "PassPalの利用規約ページです。サービスの利用条件について定めています。",
+};
+
 export default function TermsOfServicePage() {
     return (
         <div className="max-w-4xl mx-auto px-4 py-8">

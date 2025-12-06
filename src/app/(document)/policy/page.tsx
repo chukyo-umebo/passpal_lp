@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "プライバシーポリシー",
+    description: "PassPalのプライバシーポリシーページです。個人情報の取り扱いについて説明します。",
+};
+
 export default function PrivacyPolicyPage() {
     return (
         <div className="max-w-4xl mx-auto px-4 py-8">
