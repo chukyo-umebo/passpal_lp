@@ -13,6 +13,7 @@ const cspHeader = `
     base-uri 'self';
     form-action 'self';
     upgrade-insecure-requests;
+    require-trusted-types-for 'script';
 `;
 
 const nextConfig: NextConfig = {
