@@ -1,5 +1,0 @@
-- TypeScript with React function components; default to server components unless interactivity is needed (`"use client"`).
-- Styling handled via Tailwind CSS v4 tokens defined in `globals.css`; custom utility classes prefixed with `bg-passpal-*`, etc.
-- Use absolute imports with the `@/` alias for local modules.
-- Favor semantic HTML, accessibility-conscious components, and localized Japanese copy.
-- Keep assets under `public/` and leverage Next.js metadata/functions (`layout.tsx`, `sitemap.ts`, `robots.ts`).

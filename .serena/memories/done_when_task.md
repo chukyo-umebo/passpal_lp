@@ -1,4 +1,0 @@
-- Update relevant page components or metadata under `src/app` and `src/components`.
-- Validate with `npm run lint` and, when changes touch build configuration, `npm run build`.
-- Ensure newly added routes (`sitemap`, `robots`, OG image) export proper Next.js metadata types.
-- Confirm public-facing copy remains accurate for PassPal (unofficial Chukyo University learning hub).

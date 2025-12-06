@@ -1,4 +1,0 @@
-- Marketing landing page for the PassPal unofficial Chukyo University study companion app, built with Next.js 15 (App Router) and TypeScript.
-- Uses Tailwind CSS v4, Radix UI, lucide-react icons, and custom components under `src/components` for sections such as hero, features, testimonials, FAQ, and CTAs.
-- App-level routing lives in `src/app`; legal documents exist under `(document)` routes, forms under `(form)`, and extension info under `extensions`. Public assets (store badges, icons) live in `public/`.
-- Designed to deploy on Vercel with Cloudflare DNS/Proxy according to user context.

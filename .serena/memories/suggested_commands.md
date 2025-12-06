@@ -1,4 +1,14 @@
-- `npm run dev` — launch the Next.js dev server (Turbopack enabled).
-- `npm run build` — create a production build.
-- `npm run start` — start the production server locally.
-- `npm run lint` — run ESLint via Next.js.
+# Suggested Commands
+
+**Development**:
+- `npm run dev`: Starts the development server using Turbopack.
+- `npm run build`: Builds the application for production.
+- `npm run start`: Starts the production server.
+
+**Quality Assurance**:
+- `npm run lint`: Runs ESLint to check for code quality issues.
+
+**System Utilities (macOS/zsh)**:
+- `ls -R`: List directory contents recursively.
+- `grep -r "pattern" .`: Search for text patterns in files.
+- `find . -name "filename"`: Find files by name.
