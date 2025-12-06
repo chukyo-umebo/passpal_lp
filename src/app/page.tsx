@@ -536,6 +536,21 @@ export default function HomePage() {
                                 </li>
                             </ul>
                         </div>
+                        <div>
+                            <h4 className="mb-6 text-lg text-white">法的事項</h4>
+                            <ul className="space-y-3 text-gray-400">
+                                <li>
+                                    <a href="/term" className="transition-colors hover:text-[#B19CD9]">
+                                        利用規約
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/policy" className="transition-colors hover:text-[#B19CD9]">
+                                        プライバシーポリシー
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div className="border-t border-[#B19CD9]/20 pt-8 text-center text-gray-400">
                         <p>&copy; 2025 PassPal. All rights reserved.</p>
