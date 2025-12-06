@@ -161,7 +161,14 @@ export default function HomePage() {
             >
                 <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center gap-3">
-                        <Image src={SCREENSHOTS.appIcon} alt="PassPal" width={48} height={48} className="h-12 w-12 rounded-2xl shadow-lg shadow-[#B19CD9]/50" />
+                        <Image
+                            src={SCREENSHOTS.appIcon}
+                            alt="PassPal"
+                            width={48}
+                            height={48}
+                            priority
+                            className="h-12 w-12 rounded-2xl shadow-lg shadow-[#B19CD9]/50"
+                        />
                         <span className="bg-gradient-to-r from-[#B19CD9] to-[#f0ebff] bg-clip-text text-2xl text-transparent">PassPal</span>
                     </div>
                     <div className="hidden items-center gap-8 md:flex">
