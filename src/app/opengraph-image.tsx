@@ -1,7 +1,5 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
-
 export const size = {
     width: 1200,
     height: 630,
@@ -42,24 +40,20 @@ export default function OpenGraphImage() {
                     >
                         P
                     </div>
-                    <div>
+                    <div style={{ display: "flex", flexDirection: "column" }}>
                         <p style={{ fontSize: "24px", margin: 0, color: "#8b8b8b" }}>中京大学学生向け学習ハブ</p>
                         <h1 style={{ fontSize: "64px", margin: 0, fontWeight: 700 }}>PassPal</h1>
                     </div>
                 </div>
 
                 <div style={{ display: "flex", gap: "36px", fontSize: "28px" }}>
-                    <div>
+                    <div style={{ display: "flex", flexDirection: "column" }}>
                         <p style={{ margin: 0, fontWeight: 600 }}>課題を逃さない</p>
-                        <p style={{ margin: "12px 0 0", color: "#8b8b8b", fontSize: "24px" }}>
-                            ALBO・MaNaBo・ポータルをまとめてチェック
-                        </p>
+                        <p style={{ margin: "12px 0 0", color: "#8b8b8b", fontSize: "24px" }}>ALBO・MaNaBo・ポータルをまとめてチェック</p>
                     </div>
-                    <div>
+                    <div style={{ display: "flex", flexDirection: "column" }}>
                         <p style={{ margin: 0, fontWeight: 600 }}>時間割もワンタップ</p>
-                        <p style={{ margin: "12px 0 0", color: "#8b8b8b", fontSize: "24px" }}>
-                            締切と授業スケジュールをスマート管理
-                        </p>
+                        <p style={{ margin: "12px 0 0", color: "#8b8b8b", fontSize: "24px" }}>締切と授業スケジュールをスマート管理</p>
                     </div>
                 </div>
 
@@ -80,6 +74,6 @@ export default function OpenGraphImage() {
                 </div>
             </div>
         ),
-        size,
+        size
     );
 }
