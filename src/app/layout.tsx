@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 
@@ -98,15 +99,23 @@ const structuredData = {
     sameAs: ["https://twitter.com/passpal_app"],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const headersList = await headers();
+    const nonce = headersList.get("x-nonce") || "";
+
     return (
         <html lang="ja">
             <body className={`${notoSansJp.variable} antialiased`}>
-                <script id="passpal-ld-json" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+                <script
+                    id="passpal-ld-json"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+                    nonce={nonce}
+                />
                 <a href="#main-content" className="skip-link">
                     メインコンテンツにスキップ
                 </a>

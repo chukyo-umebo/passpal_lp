@@ -5,7 +5,7 @@ export function middleware(request: NextRequest) {
     const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
     const cspHeader = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'nonce-${nonce}' 'strict-dynamic' https://apis.google.com https://www.gstatic.com https://static.cloudflareinsights.com;
+    script-src 'self' 'unsafe-eval' 'nonce-${nonce}' https://apis.google.com https://www.gstatic.com https://static.cloudflareinsights.com;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     img-src 'self' blob: data: https://*.googleusercontent.com;
     font-src 'self' https://fonts.gstatic.com;
