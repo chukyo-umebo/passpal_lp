@@ -506,12 +506,32 @@ export default function HomePage() {
                             <ul className="space-y-3 text-gray-400">
                                 <li>
                                     <a href="https://x.com/passpal_app" className="transition-colors hover:text-[#B19CD9]">
-                                        Twitter
+                                        X
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/chukyo_passpal/" className="transition-colors hover:text-[#B19CD9]">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://marshmallow-qa.com/ihb6w4d50uwr9fl" className="transition-colors hover:text-[#B19CD9]">
+                                        マシュマロ
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://github.com/chukyo-passpal" className="transition-colors hover:text-[#B19CD9]">
                                         GitHub
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 className="mb-6 text-lg text-white">ダウンロード</h4>
+                            <ul className="space-y-3 text-gray-400">
+                                <li>
+                                    <a href="https://apps.apple.com/app/passpal/id6754452343" className="transition-colors hover:text-[#B19CD9]">
+                                        App Store
                                     </a>
                                 </li>
                             </ul>
