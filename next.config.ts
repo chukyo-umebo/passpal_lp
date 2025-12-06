@@ -1,21 +1,5 @@
 import type { NextConfig } from "next";
 
-const cspHeader = `
-    default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' https://apis.google.com https://www.gstatic.com https://static.cloudflareinsights.com;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-    img-src 'self' blob: data: https://*.googleusercontent.com;
-    font-src 'self' https://fonts.gstatic.com;
-    connect-src 'self' https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://chukyo-passpal.firebaseapp.com https://www.googleapis.com https://cloudflareinsights.com;
-    frame-src 'self' https://*.firebaseapp.com https://chukyo-passpal.firebaseapp.com;
-    frame-ancestors 'self' chrome-extension:;
-    object-src 'none';
-    base-uri 'self';
-    form-action 'self';
-    upgrade-insecure-requests;
-    require-trusted-types-for 'script';
-`;
-
 const nextConfig: NextConfig = {
     experimental: {
         optimizeCss: true,
@@ -25,10 +9,6 @@ const nextConfig: NextConfig = {
             {
                 source: "/(.*)",
                 headers: [
-                    {
-                        key: "Content-Security-Policy",
-                        value: cspHeader.replace(/\n/g, ""),
-                    },
                     {
                         key: "Strict-Transport-Security",
                         value: "max-age=31536000; includeSubDomains; preload",
