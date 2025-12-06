@@ -12,7 +12,7 @@ export default function TermsOfServicePage() {
 
             <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                    本規約（以下「本規約」といいます。）は、PassPal運営チーム（以下「当チーム」といいます。）がサービス「PassPal」（以下「本サービス」といいます。）上で提供する一切のサービスの利用条件を定めるものです。登録利用者（以下「ユーザー」といいます。）は、本規約に同意のうえ本サービスを利用するものとします。
+                    本規約は、PassPal運営チーム（以下「当チーム」といいます。）がサービス「PassPal」（以下「本サービス」といいます。）上で提供する一切のサービスの利用条件を定めるものです。登録利用者（以下「ユーザー」といいます。）は、本規約に同意のうえ本サービスを利用するものとします。
                 </p>
 
                 <hr className="border-gray-300 my-8" />
@@ -184,7 +184,7 @@ export default function TermsOfServicePage() {
 
                 <section>
                     <h2 className="text-xl font-bold mb-4">附則</h2>
-                    <p>本規約は 2025 年 8 月 2 日から適用します。</p>
+                    <p>本規約は 2025 年 12 月 6 日から適用します。</p>
                 </section>
             </div>
         </div>
