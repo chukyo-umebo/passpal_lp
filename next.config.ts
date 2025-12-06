@@ -28,6 +28,10 @@ const nextConfig: NextConfig = {
                         key: "Content-Security-Policy",
                         value: cspHeader.replace(/\n/g, ""),
                     },
+                    {
+                        key: "Strict-Transport-Security",
+                        value: "max-age=86400; includeSubDomains",
+                    },
                 ],
             },
         ];
