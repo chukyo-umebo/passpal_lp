@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { BarChart3, Bell, BookOpen, Calendar, Check, ChevronDown, Clock, Download, Shield, Smartphone, Sparkles, Users, Wifi, Zap } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -160,7 +161,7 @@ export default function HomePage() {
                 }`}
             >
                 <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-                    <div className="flex items-center gap-3">
+                    <Link href="/" className="flex items-center gap-3 cursor-pointer">
                         <Image
                             src={SCREENSHOTS.appIcon}
                             alt="PassPal"
@@ -171,16 +172,16 @@ export default function HomePage() {
                             className="h-12 w-12 rounded-2xl shadow-lg shadow-[#B19CD9]/50"
                         />
                         <span className="bg-gradient-to-r from-[#B19CD9] to-[#f0ebff] bg-clip-text text-2xl text-transparent">PassPal</span>
-                    </div>
+                    </Link>
                     <div className="hidden items-center gap-8 md:flex">
-                        <button onClick={() => scrollToSection("features")} className="text-gray-300 transition-colors hover:text-[#B19CD9]">
+                        <button onClick={() => scrollToSection("features")} className="text-gray-300 transition-colors hover:text-[#B19CD9] cursor-pointer">
                             機能
                         </button>
-                        <button onClick={() => scrollToSection("benefits")} className="text-gray-300 transition-colors hover:text-[#B19CD9]">
+                        <button onClick={() => scrollToSection("benefits")} className="text-gray-300 transition-colors hover:text-[#B19CD9] cursor-pointer">
                             特徴
                         </button>
                         <Button
-                            className="bg-gradient-to-r from-[#B19CD9] to-[#8d7bb8] shadow-lg shadow-[#B19CD9]/50 transition-colors hover:from-[#9E8AC0] hover:to-[#7a6a9e] text-white border-none"
+                            className="bg-gradient-to-r from-[#B19CD9] to-[#8d7bb8] shadow-lg shadow-[#B19CD9]/50 transition-colors hover:from-[#9E8AC0] hover:to-[#7a6a9e] text-white border-none cursor-pointer"
                             onClick={() => scrollToSection("download")}
                         >
                             ダウンロード
@@ -252,7 +253,7 @@ export default function HomePage() {
                                 transition={{ delay: 0.8, duration: 0.8 }}
                             >
                                 <Button
-                                    className="bg-gradient-to-r from-[#B19CD9] to-[#8d7bb8] px-8 py-6 text-lg shadow-2xl shadow-[#B19CD9]/50 transition-colors hover:from-[#9E8AC0] hover:to-[#7a6a9e] text-white border-none"
+                                    className="bg-gradient-to-r from-[#B19CD9] to-[#8d7bb8] px-8 py-6 text-lg shadow-2xl shadow-[#B19CD9]/50 transition-colors hover:from-[#9E8AC0] hover:to-[#7a6a9e] text-white border-none cursor-pointer"
                                     size="lg"
                                     onClick={() => scrollToSection("download")}
                                 >
