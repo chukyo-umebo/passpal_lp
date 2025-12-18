@@ -456,7 +456,7 @@ export default function HomePage() {
                         </p>
                         <div className="mb-12 flex flex-col items-center justify-center gap-6 sm:flex-row">
                             <Button
-                                className="h-auto bg-transparent p-0 shadow-none hover:bg-transparent"
+                                className="h-auto bg-transparent p-0 shadow-none hover:bg-transparent cursor-pointer"
                                 size="lg"
                                 onClick={() => {
                                     window.open("https://apps.apple.com/app/passpal/id6754452343");
@@ -464,7 +464,13 @@ export default function HomePage() {
                             >
                                 <Image src="/img/AppStoreBadge.svg" alt="App Store" width={170} height={57} sizes="170px" />
                             </Button>
-                            <Button className="m-0 h-auto bg-transparent p-0 shadow-none hover:bg-transparent grayscale" size="lg" disabled>
+                            <Button
+                                className="m-0 h-auto bg-transparent p-0 shadow-none hover:bg-transparent cursor-pointer"
+                                size="lg"
+                                onClick={() => {
+                                    window.open("https://play.google.com/store/apps/details?id=app.chukyopasspal.passpal");
+                                }}
+                            >
                                 <Image src="/img/GooglePlayBadge.png" alt="Google Play" width={200} height={59} sizes="200px" />
                             </Button>
                         </div>
@@ -556,6 +562,16 @@ export default function HomePage() {
                                     <a href="https://apps.apple.com/app/passpal/id6754452343" className="transition-colors hover:text-[#B19CD9]">
                                         App Store
                                     </a>
+                                </li>
+                                <li>
+                                    <span>
+                                        <a
+                                            href="https://play.google.com/store/apps/details?id=app.chukyopasspal.passpal"
+                                            className="transition-colors hover:text-[#B19CD9]"
+                                        >
+                                            Google Play
+                                        </a>
+                                    </span>
                                 </li>
                             </ul>
                         </div>
