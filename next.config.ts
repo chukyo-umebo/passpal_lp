@@ -4,6 +4,15 @@ const nextConfig: NextConfig = {
     experimental: {
         optimizeCss: true,
     },
+    async redirects() {
+        return [
+            {
+                source: "/:path*",
+                destination: "https://www.umebo.app/",
+                permanent: true,
+            },
+        ];
+    },
     async headers() {
         return [
             {
