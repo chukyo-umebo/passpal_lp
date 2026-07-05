@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
             {
                 source: "/:path*",
                 destination: "https://www.umebo.app/",
-                permanent: true,
+                statusCode: 301,
             },
         ];
     },
